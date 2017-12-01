@@ -79,10 +79,10 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
+    list_songs
     response = gets
 
     unless response.to_i == false
-      list_songs
       puts "Playing "
 
     end
