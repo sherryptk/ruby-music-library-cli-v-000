@@ -21,7 +21,6 @@ class MusicLibraryController
       puts "What would you like to do?"
 
       response = gets
-
       if response == 'list songs'
         list_songs
       elsif response == 'list artists'
