@@ -45,7 +45,6 @@ class Song
 
   def genre=(genre)
     @genre = genre
-    # self.genre.songs << self
 
     unless self.genre.songs.include?(self)
       self.genre.songs << self
@@ -62,8 +61,6 @@ class Song
   def self.create_from_filename(file_name)
     self.new_from_filename(file_name).save
   end
-
-  # find_or_create_by_name(file_name)
 
 end
 
