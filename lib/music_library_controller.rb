@@ -53,9 +53,11 @@ class MusicLibraryController
     def list_songs_by_artist
       puts "Please enter the name of an artist:"
       response = gets
-      extend Concerns::Findable
-
-      response
+      artist = find_by_name(response)
+      count = 1
+      artist.songs.each do |song|
+        puts "#{count}. #{song.name} - #{song.genre}"
+      end
     end
 end
 
