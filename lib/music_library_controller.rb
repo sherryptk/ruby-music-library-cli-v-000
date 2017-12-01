@@ -54,6 +54,7 @@ class MusicLibraryController
       puts "Please enter the name of an artist:"
       response = gets
       artist = Artist.find_by_name(response)
+      binding.pry
       count = 1
       artist.songs.each do |song|
         puts "#{count}. #{song.name} - #{song.genre}"
