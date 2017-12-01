@@ -83,7 +83,7 @@ class MusicLibraryController
     number = response.to_i - 1
     sorted = Song.all.sort_by {|obj| obj.name}
 
-    unless number == false || response > sorted.length
+    unless number == false || number > sorted.length
 
       puts "Playing #{sorted[number].name} by #{sorted[number].artist.name}"
 
