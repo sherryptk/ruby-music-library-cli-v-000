@@ -3,7 +3,6 @@ class MusicLibraryController
 
   extend Concerns::Findable
 
-
   def initialize(path = './db/mp3s')
       MusicImporter.new(path).import
   end
