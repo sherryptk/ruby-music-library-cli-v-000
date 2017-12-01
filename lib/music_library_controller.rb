@@ -95,3 +95,4 @@ end
 
 # rspec spec/010_music_library_controller_spec.rb
 # rspec spec/011_music_library_cli_methods_spec.rb
+# rspec spec/012_music_library_cli_spec.rb
