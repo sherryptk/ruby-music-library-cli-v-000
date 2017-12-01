@@ -83,7 +83,6 @@ class MusicLibraryController
     number = response.to_i - 1
     sorted = Song.all.sort_by {|obj| obj.name}
     unless number > sorted.length || number < 1 || number.is_a?(Integer)  == false
-      binding.pry
       puts "Playing #{sorted[number].name} by #{sorted[number].artist.name}"
 
     end
