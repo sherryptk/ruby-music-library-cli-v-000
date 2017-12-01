@@ -57,7 +57,7 @@ class MusicLibraryController
       count = 1
       unless artist == nil
       artist.songs.each do |song|
-        puts "#{count}. #{song.name} - #{song.genre}"
+        puts "#{count}. #{song.name} - #{song.genre.name}"
         count +=1
       end
     end
