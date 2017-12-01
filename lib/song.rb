@@ -12,7 +12,6 @@ class Song
 
     unless genre.nil?
       self.genre=(genre)
-
     end
 
     unless artist.nil?
