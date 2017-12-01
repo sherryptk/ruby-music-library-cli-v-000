@@ -65,8 +65,18 @@ class MusicLibraryController
   end
 
   def list_songs_by_genre
-    
-  end 
+    puts "Please enter the name of a genre:"
+    response = gets
+    genre = Genre.find_by_name(response)
+    count = 1
+    unless genre == nil
+      sorted = genre.songs.sort_by {|obj| obj.name}
+      sorted.each do |genre|
+      puts "#{count}. #{genre.name}"
+      count +=1
+    end
+  end
+  end
 
 
 end
