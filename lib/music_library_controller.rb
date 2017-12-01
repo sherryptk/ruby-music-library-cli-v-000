@@ -81,7 +81,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     response = gets
     number = response.to_i - 1
-    if number.is_a? numeric == false
+    if number.is_a? Numeric == false
       number == false
     end
     sorted = Song.all.sort_by {|obj| obj.name}
