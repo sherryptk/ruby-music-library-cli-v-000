@@ -85,8 +85,9 @@ class MusicLibraryController
     unless number > sorted.length || number < 1 || number.is_a?(Integer)  == false
       puts "Playing #{sorted[number].name} by #{sorted[number].artist.name}"
     end
+    binding.pry
+
   end
-binding.pry
 
   end
 
