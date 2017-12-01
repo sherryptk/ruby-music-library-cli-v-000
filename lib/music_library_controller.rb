@@ -86,7 +86,7 @@ class MusicLibraryController
       puts "Playing #{sorted[number].name} by #{sorted[number].artist.name}"
     end
   end
-
+binding.pry
 
   end
 
