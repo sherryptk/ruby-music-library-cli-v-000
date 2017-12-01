@@ -80,8 +80,9 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     response = gets
-    binding.pry
       puts "Playing "
+      binding.pry
+
   end
 
 
