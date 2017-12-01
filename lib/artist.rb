@@ -53,8 +53,6 @@ class Artist
 
 end
 
-
-
 # rspec spec/002_artist_basics_spec.rb
 # rspec spec/004_songs_and_artists_spec.rb
 # rspec spec/006_artists_and_genres_spec.rb
