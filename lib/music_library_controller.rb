@@ -22,6 +22,12 @@ class MusicLibraryController
       response = gets
       if response == 'list songs'
         list_songs
+      elsif response == 'list artists'
+        list_artists
+      elsif response == 'list artist'
+        list_artists
+    
+
       end
     end
   end
