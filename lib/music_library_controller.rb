@@ -81,8 +81,6 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     response = gets
       puts "Playing "
-      binding.pry
-
   end
 
 
