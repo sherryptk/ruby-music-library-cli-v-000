@@ -84,7 +84,7 @@ class MusicLibraryController
     unless number == false
       sorted = Song.all.sort_by {|obj| obj.name}
 
-      puts "Playing #{sorted[number].artist.name} by #{sorted[number].name}"
+      puts "Playing #{sorted[number].name} by #{sorted[number].artist.name}"
 
     end
   end
