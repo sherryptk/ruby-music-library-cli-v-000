@@ -57,6 +57,7 @@ class MusicLibraryController
       count = 1
       unless artist == nil
         sorted = artist.songs.sort
+        binding.pry
         sorted.each do |song|
         puts "#{count}. #{song.name} - #{song.genre.name}"
         count +=1
