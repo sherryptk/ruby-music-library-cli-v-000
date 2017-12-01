@@ -28,6 +28,12 @@ class MusicLibraryController
         list_genres
       elsif response == 'list artist'
         list_songs_by_artist
+      elsif response == 'list genre'
+        list_songs_by_genre
+      elsif response == 'play song'
+        play_song
+
+
 
 
 
