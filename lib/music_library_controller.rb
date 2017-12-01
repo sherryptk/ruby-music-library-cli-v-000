@@ -82,8 +82,8 @@ class MusicLibraryController
     response = gets
     number = response.to_i - 1
     sorted = Song.all.sort_by {|obj| obj.name}
+    binding.pry
     unless number == -1 || number > sorted.length
-
       puts "Playing #{sorted[number].name} by #{sorted[number].artist.name}"
 
     end
