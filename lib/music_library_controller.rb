@@ -55,18 +55,20 @@ class MusicLibraryController
       response = gets
       artist = Artist.find_by_name(response)
       count = 1
+
       unless artist == nil
-        sorted = artist.songs.sort_by {|obj| obj.name}
-        sorted.each do |song|
-        puts "#{count}. #{song.name} - #{song.genre.name}"
-        count +=1
-      end
+        artist.list_songs
+      #   sorted = artist.songs.sort_by {|obj| obj.name}
+      #   sorted.each do |song|
+      #   puts "#{count}. #{song.name} - #{song.genre.name}"
+      #   count +=1
+      # end
     end
   end
 
   def list_songs_by_genre
 
-  end 
+  end
 
 
 end
