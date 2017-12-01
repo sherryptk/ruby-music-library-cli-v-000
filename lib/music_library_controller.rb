@@ -81,8 +81,9 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     response = gets
     number = response.to_i - 1
-    unless number == false
-      sorted = Song.all.sort_by {|obj| obj.name}
+    sorted = Song.all.sort_by {|obj| obj.name}
+
+    unless number == false || number > sorted.length
 
       puts "Playing #{sorted[number].name} by #{sorted[number].artist.name}"
 
