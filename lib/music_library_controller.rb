@@ -56,7 +56,6 @@ class MusicLibraryController
       artist = Artist.find_by_name(response)
       count = 1
       unless artist == nil
-        binding.pry
         sorted = artist.songs.sort_by {|obj| obj.name}
         sorted.each do |song|
         puts "#{count}. #{song.name} - #{song.genre.name}"
