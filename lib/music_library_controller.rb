@@ -24,9 +24,12 @@ class MusicLibraryController
         list_songs
       elsif response == 'list artists'
         list_artists
+      elsif response == 'list genre'
+        list_genres
       elsif response == 'list artist'
-        list_artists
-    
+        list_songs_by_artist
+
+
 
       end
     end
