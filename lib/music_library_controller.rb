@@ -82,6 +82,7 @@ class MusicLibraryController
     response = gets
 
     unless response.to_i == false
+      list_songs
       puts "Playing "
 
     end
